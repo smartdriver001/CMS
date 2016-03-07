@@ -1,0 +1,41 @@
+<template name="menu">
+    <div id="menu">
+        {{#if currentUser}}
+            <span class="heading">{{_ "menuOnline"}}</span>
+            <img id="avatar" src="{{currentUser.profile.avatar}}">
+            {{_ "nick"}}: {{currentUser.username}}<br>
+            {{_ "menuPosts"}}: {{currentUser.profile.postCount}}<br><br>
+
+            <button id="activate" class="menu-button">{{_ "menuAddPost"}}</button><button id="logout" class="menu-button">{{_ "menuLogOut"}}</button>
+
+            {{#if isInRole 'administrator'}}
+                <br><br><button id="adminPanel" class="menu-button">{{_ "menuAdminPanel"}}</button><br>
+            {{/if}}
+        {{else}}
+            <span class="heading">{{_ "menuLogin"}}</span>
+            <form role="form">
+                <div class="form-group">
+                    <label for="loginUsername" >{{_ "username"}}</label>
+                    <input type="text" id="loginUsername" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">{{_ "password"}}</label>
+                    <input type="password" id="loginPassword" class="form-control">
+                </div>
+                <button id="login-submit" type="submit" class="btn btn-default" >{{_ "logIn"}}</button>
+            </form>
+            <a id="register">{{_ "createAccount"}}</a>
+        {{/if}}
+
+        {{#if showQuickLinks}}
+            <div id="fast-link-container">
+                <hr>
+                <span class="heading">{{_ "menuRecentPosts"}}</span>
+                {{#each recentPosts}}
+                    <a id="fast-link">{{this.title}}</a><br>
+                {{/each}}
+            </div>
+        {{/if}}
+
+    </div>
+</template>

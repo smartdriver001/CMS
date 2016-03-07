@@ -1,0 +1,64 @@
+<template name="singlePostView">
+
+    {{>header}}
+
+    <div id="content">
+        <div class="full-view-block-container">
+            <div class="full-view-block" style="text-align: left;">
+                <div class="banner" style="background-image: url({{image}});"></div>
+                <div class="post-title default-padding">{{title}}</div>
+                <div class="post-author default-padding"><a class="author">{{author}}</a>, {{formatDate date}}</div>
+                <div class="post-content-full default-padding">{{{content}}}</div>
+            </div>
+        </div>
+
+        {{#if createCommentVisible}}
+            <div id="new-comment-holder">
+                <div class="comment">
+                    <div id="left-side"><img class="comment-avatar" src="{{currentUser.profile.avatar}}">{{currentUser.username}}</div>
+                    <div id="right-side">
+                        <span class="comment-date">{{formatDate currentDate}}</span>
+                        <i id="new-comment-close" class="fa fa-times"></i><br>
+                        <form>
+                            <textarea id="commentContent" placeholder={{_ "yourMessage"}}></textarea>
+                            <button id="new-comment-add">{{_ "add"}}</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        {{else}}
+            {{#if currentUser}}
+            <div id="new-comment-holder" style="text-align: center;">
+                <i id="create-comment" class="fa fa-plus fa-2x"> {{_ "newCommentC"}}</i>
+            </div>
+            {{/if}}
+        {{/if}}
+
+        {{#if editCommentVisible}}
+            <div id="edit-comment-holder">
+                <div class="comment">
+                    <div id="left-side"><img class="comment-avatar" src="{{selectedComment.avatar}}">{{selectedComment.username}}</div>
+                    <div id="right-side">
+                        <span class="comment-date">{{formatDate selectedComment.date}}</span>
+                        <i id="edit-comment-close" class="fa fa-times"></i><br>
+                        <form>
+                            <textarea id="commentContent" placeholder={{_ "yourMessage"}} value="{{selectedComment.content}}"></textarea>
+                            <button id="edit-comment-submit">{{_ "edit"}}</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        {{/if}}
+
+        <div id="comments">
+            {{#each comments}}
+                {{>comment}}
+            {{/each}}
+        </div>
+    </div>
+
+    {{>footer}}
+
+</template>

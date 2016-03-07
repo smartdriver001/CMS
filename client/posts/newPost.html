@@ -1,0 +1,30 @@
+<template name="newPost">
+    <div id="new-post" class="post">
+        <div class="banner" style="background-image: url('../staticBanners/new-post.jpg');"><i id="new-post-close" class="fa fa-times fa-2x icon-close"></i></div>
+        <span class="heading">{{_ "newPostC"}}</span>
+
+        <form role="form">
+            <div class="form-group">
+                <label for="formTitle" >{{_ "title"}}</label>
+                <input type="text" id="formTitle" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="formImage">{{_ "postBannerUrlAddress"}}</label>
+                <input type="text" id="formImage" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="formCategory">{{_ "category"}}</label>
+                <select id="formCategory" class="form-control">
+                    <option value="/">{{_ "none"}}</option>
+                    <option value="technologies">{{_ "technologies"}}</option>
+                    <option value="guides">{{_ "guides"}}</option>
+                </select>
+            </div><br>
+            <div class="form-group">
+                <label for="formContent">{{_ "content"}}</label>
+                <textarea id="formContent" class="form-control" rows="5"></textarea>
+            </div><br>
+            <button id="add-post-submit" type="submit" class="btn btn-default" >{{_ "add"}}</button>
+        </form>
+    </div>
+</template>

@@ -1,0 +1,38 @@
+{
+    "post": {
+        "addPost": {
+            "allValid":true,
+            "options": [
+                {
+                    "type":"online",
+                    "value":true
+                }
+            ]
+        },
+        "editPost": {
+            "allValid": false,
+            "options": [
+                {
+                    "type":"author",
+                    "value": true
+                },
+                {
+                    "type": "role",
+                    "value": "administrator"
+                }
+            ]
+        },
+        "removePost": {
+            "allValid":true,
+            "options":[
+                {
+                    "type":"role",
+                    "value":"administrator"
+                }
+            ]
+        }
+    },
+    "comment": {
+
+    }
+}

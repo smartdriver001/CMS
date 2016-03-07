@@ -1,0 +1,86 @@
+{
+  //GLOBAL
+  "add": "Add",
+  "edit": "Edit",
+  "nick": "Nick",
+  "title": "Title",
+  "category": "Category",
+  "createAccount": "Create account",
+  "logIn": "Log in",
+  "username": "Username",
+  "password": "Password",
+  "confirm": "Confirm",
+  "registerC": "REGISTER",
+  "firstName": "First Name",
+  "lastName": "Last Name",
+  "name": "Name",
+  "created": "Created",
+  "usersProfileC": "USER'S PROFILE",
+  "numberOfPosts": "Post count",
+  "none": "None",
+  "technologies": "Technologies",
+  "guides": "Guides",
+  "content": "Content",
+  "loggedOut": "You have been logged out!",
+  "loggedIn": "You have been logged in!",
+
+  //HEADER
+
+  "headerHome": "HOME",
+  "headerTechnologies": "TECHNOLOGIES",
+  "headerGuides": "GUIDES",
+  "headerAboutMe": "ABOUT ME",
+
+  //MENU
+
+  "menuOnline": "ONLINE",
+  "menuPosts": "Posts",
+  "menuAddPost": "Add post",
+  "menuLogin": "LOGIN",
+  "menuLogOut": "Log out",
+  "menuAdminPanel": "Admin panel",
+  "menuRecentPosts": "RECENT POSTS",
+  "and": "and",
+
+  //POST
+
+  "postReadMore": "Read More",
+  "postComments": "Comments",
+  "deletePostConfirm": "Are you sure You want to delete this post?",
+  "yourMessage": "Your message ...",
+  "newCommentC": "NEW COMMENT",
+  "newPostC": "NEW POST",
+  "editPostC": "EDIT POST",
+  "postBannerUrlAddress": "Banner url address",
+
+  //CONTACT PAGE
+
+  "contactAboutMeT": "About me",
+  "contactAboutMe": "I'm Tomasz Przytuła, student of \"Państwowa Wyższa Szkoła Zawodowa\" in Leszno, Poland. You can also find me under nickname Darionu. This site is created using meteor framework and it's my field to develop my programming skills to become a good programmer.",
+
+  //ALERTS
+
+      //ERRORS
+
+      "createAccountError": "Encountered error during account creation",
+      "fillAllFields": "Fill all fields!",
+      "passwordsNoMatch": "Typed passwords doesn't match",
+      "requestedPostDoesNotExist" : "Requested post does not exist",
+      "addPostError": "Encountered error during post add!",
+      "editPostError": "Encountered error during post edit",
+      "deletePostError": "Encountered error during post remove!",
+      "addCommentError": "Encountered error during comment add!",
+      "editCommentError": "Encountered error during comment edit!",
+      "deleteCommentError": "Encountered error during comment removal!",
+
+      //SUCCESS
+
+      "createAccountSuccess": "Account created sucessfully! You have been logged in!",
+      "addPostSuccess": "Post added successfully!",
+      "editPostSuccess": "Post edited successfulyy!",
+      "deletePostSuccess": "Post deleted successfully!",
+      "addCommentSuccess": "Comment added successfully!",
+      "editCommentSuccess": "Comment edited successfully!",
+      "deleteCommentSuccess": "Comment deleted successfully!"
+
+}

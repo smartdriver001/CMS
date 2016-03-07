@@ -1,0 +1,22 @@
+
+#footer {
+    position: absolute;
+    display:table;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    overflow:hidden;
+    background-color:#333;
+}
+
+#copyright {
+    color:white;
+    display:table-cell;
+    text-align: right;
+    vertical-align:middle;
+    padding:20px;
+    font-size: 18px;
+    font-weight: 300;
+}

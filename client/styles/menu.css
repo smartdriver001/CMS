@@ -1,0 +1,51 @@
+
+#menu {
+    display:inline-block;
+    float:right;
+    height:inherit;
+    width:25%;
+    padding:20px;
+    margin-top:30px;
+    background-color:white;
+    text-align: center;
+    font: 300 16px 'Roboto',sans-serif;
+    color:#444;
+}
+
+
+
+#menu #avatar {
+    display:block;
+    border:1px solid black;
+    margin:0 auto 20px auto;
+    height:120px;
+    width:120px;
+}
+
+.menu-button {
+    background: transparent;
+    border:none;
+}
+
+#menu .form-control {
+    width:70%;
+    height:30px;
+}
+
+#menu label, .menu-button {
+    font: inherit;
+}
+
+#fast-link-container {
+    padding-top: inherit;
+    padding-bottom: inherit;
+}
+
+#menu hr {
+    margin: 0;
+}
+
+
+
+
+

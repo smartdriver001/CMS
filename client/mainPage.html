@@ -1,0 +1,29 @@
+<template name="mainPage">
+
+    {{> header}}
+    {{> sAlert}}
+
+    <div id="content">
+        <div id="posts-holder">
+            {{> menu}}
+
+            {{#if newPostVisible}}
+                {{>newPost}}
+            {{/if}}
+
+            {{#if editPostVisible}}
+                {{>editPost}}
+            {{/if}}
+
+            {{#each Posts}}
+                {{>singlePost}}
+            {{/each}}
+
+            <a id="return-to-top" style="bottom: {{toTopBottom}}px"><i id="return-icon" class="icon-chevron-up"></i></a>
+        </div>
+    </div>
+
+    {{> footer}}
+
+</template>
+

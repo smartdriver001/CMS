@@ -1,0 +1,25 @@
+<template name="header">
+    <div id="header" style="height:{{headerClass}}px;">
+
+        <div id="accessible-header">
+            {{#if loading}}
+                <div id="loading-container" style="top:{{loadingTop}}px;">
+                    <img src="../loading.gif" id="test">
+                </div>
+            {{/if}}
+            <span id="header-title">TOMASZ PRZYTUŁA</span>
+            <div id="header-buttons-container">
+                <button class="header-button {{headerButtonClass '/'}}" value="/">{{_ "headerHome"}}</button>
+                <button class="header-button {{headerButtonClass '/technologies'}}" value="/technologies">{{_ "headerTechnologies"}}</button>
+                <button class="header-button {{headerButtonClass '/guides'}}" value="/guides">{{_ "headerGuides"}}</button>
+                <button class="header-button {{headerButtonClass '/contact'}}" value="/contact">{{_ "headerAboutMe"}}</button>
+            </div>
+
+            <div style="position:absolute;width:50px;top:10px;">
+                <img id="polish-lang" src="../pl.png" alt="Polish" class="language-flag">
+                <img id="english-lang" src="../gb.png" alt="English" class="language-flag">
+            </div>
+
+        </div>
+    </div>
+</template>

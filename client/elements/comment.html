@@ -1,0 +1,24 @@
+<template name="comment">
+    <div class="comment">
+        <div id="left-side"><img class="comment-avatar" src="{{getAvatar authorId}}"><div class="author"><a>{{getUsername authorId}}</a></div></div>
+        <div id="right-side">
+
+            <span class="comment-date">{{formatDate date}}</span>
+
+            {{#if isInRole 'administrator'}}
+                <i id="comment-delete" class="fa fa-trash-o icon-panel"></i>
+                <i id="comment-edit" class="fa fa-pencil-square-o icon-panel"></i>
+            {{else}}
+
+                {{#if postOwner}}
+                    <i id="comment-edit" class="fa fa-pencil-square-o icon-panel"></i>
+                {{/if}}
+            {{/if}}
+
+            <div id="message">
+                {{message}}
+            </div>
+        </div>
+
+    </div>
+</template>

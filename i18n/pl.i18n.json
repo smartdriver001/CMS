@@ -1,0 +1,89 @@
+{
+  //GLOBAL
+  "add": "Dodaj",
+  "edit": "Edytuj",
+  "nick": "Nazwa",
+  "title": "Tytuł",
+  "category": "Kategoria",
+  "createAccount": "Utwórz konto",
+  "logIn": "Zaloguj",
+  "username": "Nazwa użytkownika",
+  "password": "Hasło",
+  "confirm": "Potwierdź",
+  "registerC": "REJESTRACJA",
+  "firstName": "Imię",
+  "lastName": "Nazwisko",
+  "and": "i",
+  "name": "Imię i nazwisko",
+  "created": "Utworzono",
+  "usersProfileC": "PROFIL UŻYTKOWNIKA",
+  "numberOfPosts": "Ilość postów",
+  "none": "Brak",
+  "technologies": "Technologie",
+  "guides": "Poradniki",
+  "content": "Treść",
+  "loggedOut": "Zostałeś wylogowany!",
+  "loggedIn": "Zostałeś zalogowany!",
+
+  //HEADER
+
+  "headerHome": "STRONA GŁÓWNA",
+  "headerTechnologies": "TECHNOLOGIE",
+  "headerGuides": "PORADNIKI",
+  "headerAboutMe": "O MNIE",
+
+  //MENU
+
+  "menuOnline": "ZALOGOWANY",
+  "menuPosts": "Posty",
+  "menuAddPost": "Dodaj post",
+  "menuLogin": "LOGOWANIE",
+  "menuLogOut": "Wyloguj",
+  "menuAdminPanel": "Panel administracyjny",
+  "menuRecentPosts": "NAJNOWSZE POSTY",
+
+  //POST
+
+  "postReadMore": "Czytaj więcej",
+  "postComments": "Komentarze",
+  "deletePostConfirm": "Jesteś pewien, że chcesz usunąć tego posta?",
+  "yourMessage": "Twoja wiadomość ...",
+  "newCommentC": "NOWY KOMENTARZ",
+  "newPostC": "NOWY POST",
+  "editPostC": "EDYTUJ POST",
+  "postBannerUrlAddress": "Adres url do banneru",
+
+  //CONTACT PAGE
+
+  "contactAboutMeT": "O mnie",
+  "contactAboutMe": "Nazywam się Tomasz Przytuła, jestem studentem Państwowej Wyższej Szkoły Zawodowej w Lesznie. Można mnie również spotkać pod pseudonimem Darionu. Interesuje się programowaniem i właśnie tej dziedzinie chcę poświęcić się zawodowo.",
+
+  //ALERTS
+
+     //ERRORS
+
+     "createAccountError": "Wystąpił błąd podczas tworzenia konta",
+     "fillAllFields": "Uzupełnij wszystkie pola!",
+     "passwordsNoMatch": "Podane hasła nie są identyczne",
+     "requestedPostDoesNotExist" : "Nie istnieje post dla podanej ścieżki",
+     "addPostError": "Wystąpił błąd podczas dodawania posta!",
+     "editPostError": "Wystąpił błąd podczas edytowania posta!",
+     "deletePostError": "Wystąpił błąd podczas usuwania posta!",
+     "addCommentError": "Wystąpił błąd podczas dodawania komentarza!",
+     "editCommentError": "Wystąpił błąd podczas edytowania komentarza!",
+     "deleteCommentError": "Wystąpił błąd podczas usuwania komentarza!",
+
+     //SUCCESS
+
+     "createAccountSuccess": "Pomyślnie utworzono konto! Zostałeś automatycznie zalogowany!",
+     "addPostSuccess": "Dodano post pomyślnie!",
+     "editPostSuccess": "Edytowano post pomyślnie!",
+     "deletePostSuccess": "Usunięto post pomyślnie!",
+     "addCommentSuccess": "Dodano komentarz pomyślnie!",
+     "editCommentSuccess": "Edytowano komentarz pomyślnie!",
+     "deleteCommentSuccess": "Usunięto komentarz pomyślnie!",
+
+  //COLLECTIONS
+
+  "ta":"ta"
+}

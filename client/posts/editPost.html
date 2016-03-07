@@ -1,0 +1,22 @@
+<template name="editPost">
+    <div id="edit-post" class="post">
+        <div class="banner" style="background-image: url({{banner}});"><i id="edit-post-close" class="icon-close fa fa-times fa-2x "></i></div>
+        <span class="heading">{{_ "editPostC"}}</span>
+
+        <form role="form">
+            <div class="form-group">
+                <label for="formTitle" >{{_ "title"}}</label>
+                <input type="text" id="formTitle" class="form-control" value="{{postObject.title}}">
+            </div>
+            <div class="form-group">
+                <label for="formImage">{{_ "postBannerUrlAddress"}}</label>
+                <input type="text" id="formImage" class="form-control" value="{{postObject.image}}">
+            </div>
+            <div class="form-group">
+                <label for="formContent">{{_ "content"}}</label>
+                <textarea id="formContent" class="form-control" rows="5">{{postObject.content}}</textarea>
+            </div><br>
+            <button id="edit-post-submit" type="submit" class="btn btn-default" >{{_ "confirm"}}</button>
+        </form>
+    </div>
+</template>

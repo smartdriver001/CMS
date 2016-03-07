@@ -1,0 +1,25 @@
+<template name="singlePost">
+    <div class="post">
+        <div class="banner" style="background-image: url({{this.image}});"></div>
+        <div class="post-title default-padding">{{this.title}}</div>
+        <div class="post-author"><a class="author">{{author}}</a>, {{formatDate this.date}}</div>
+        <div class="post-content default-padding">{{{this.content}}}</div>
+        <div class="post-bottom default-padding">
+            {{#if tooLong}}
+                <a id="read-more">{{_ "postReadMore"}}</a> |
+            {{/if}}
+
+            <a id="comments">{{_ "postComments"}} {{commentsCounter}}</a>
+
+            {{#if isInRole 'administrator'}}
+                <i id="single-post-delete" class="fa fa-trash-o icon-panel"></i>
+                <i id="single-post-edit" class="fa fa-pencil-square-o icon-panel"></i>
+            {{else}}
+
+                {{#if postOwner}}
+                    <i id="single-post-edit" class="fa fa-pencil-square-o icon-panel"></i>
+                {{/if}}
+            {{/if}}
+        </div>
+    </div>
+</template>
