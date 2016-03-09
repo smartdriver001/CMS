@@ -15,7 +15,7 @@ Meteor.publish('singlePostComments', function(id){
 });
 
 Meteor.publish('userBasic', function(){
-    return Meteor.users.find({},{fields: {'_id': 1, 'username': 1, 'profile.avatar':1, 'profile.postCounter':1}});
+    return Meteor.users.find({},{fields: {'_id': 1, 'username': 1, 'profile.avatar':1, 'profile.postCount':1}});
 });
 
 Meteor.publish('userData', function(username){

@@ -92,7 +92,7 @@ postManager = class postManager {
 
     checkPost(){
         let id = this.operationDetails;
-        var post = posts.findOne({_id:id});
+        let post = posts.findOne({_id:id});
 
         if(post) {
             return true;
