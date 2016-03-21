@@ -1,12 +1,11 @@
 # CMS
-Personal meteor project.<br>
+Meteor project for personal use.<br>
 
 # Current TODO LIST
 - Upload/Change user avatar
 - English posts
 - Admin panel
 - User's suggested translations feature
-- 
 
 # Preview
 - Main site (English)
