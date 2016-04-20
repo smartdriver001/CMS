@@ -7,6 +7,12 @@ Meteor project for personal use.<br>
 - Admin panel
 - User's suggested translations feature
 
+# Demo
+- [demo website](http://darionu.pl:4000)
+  * Example normal user login details (You can create Yours)
+  * login - gal
+  * password - gal
+
 # Preview
 - Main site (English)
 <p align="center">
@@ -19,4 +25,3 @@ Meteor project for personal use.<br>
   <img src="public/demo/demoCMS2.png?raw=true" width="350"/>
 </p>
 - Admin Panel (in progress)
-
