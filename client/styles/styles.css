@@ -116,7 +116,7 @@ input[class="form-control"], select[class="form-control"] {
     background-color:white;
 }
 
-.profile {
+#profile {
     display:inline-block;
     width:70%;
     min-height: 700px;

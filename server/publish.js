@@ -21,3 +21,12 @@ Meteor.publish('userBasic', function(){
 Meteor.publish('userData', function(username){
     return Meteor.users.find({username:username});
 });
+
+Meteor.publish('userPosts', (username) => {
+    const user = Meteor.users.findOne({ username });
+    if (user && user._id) {
+        return posts.find({ author: user._id }, { sort: { date: -1 }});
+    }
+
+    return [];
+});

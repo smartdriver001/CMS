@@ -7,10 +7,10 @@
         <div id="posts-holder">
             {{> menu}}
 
-            <div class="profile">
+            <div id="profile">
                 <div class="banner" style="background-image: url('../staticBanners/profile.jpg');"></div>
                     <div class="default-padding" style="text-align: center;">
-                        <span class="heading" style="padding-bottom:5px;">{{_ "usersProfileC"}}</span><br>
+                        <span class="heading" style="padding-bottom:2em;">{{_ "usersProfileC"}}</span><br>
                         <img id="avatar" src="{{profile.avatar}}" style="width:120px;height:120px;"><br><br>
                         {{_ "username"}}: {{username}}<br>
                         {{_ "name"}}: {{profile.firstName}} {{profile.lastName}}<br>
@@ -22,6 +22,14 @@
 
                         <br>
                         {{_ "numberOfPosts"}}: {{profile.postCount}}
+
+                        <span id="recentPostsTitle">Last user posts:</span>
+                        <div class="recentPosts">
+                            {{#each userPosts}}
+                                <a class="fast-link">{{this.title}}</a><br>
+                            {{/each}}
+                        </div>
+                        <a id="showAllUserPosts">Show more</a>
                 </div>
             </div>
 

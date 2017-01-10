@@ -1,0 +1,14 @@
+#recentPostsTitle {
+    font-size: 1.5em;
+    display: block;
+    padding: 1.25em 0;
+}
+
+#showAllUserPosts {
+    padding-bottom: 1.25em;
+    font-size: 1.5em;
+}
+
+.recentPosts {
+    padding-bottom: 1.25em;
+}
